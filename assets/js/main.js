@@ -33,7 +33,7 @@ console.log(prezzoNormaleElement);
 } else if (age>=65){
     const sconto = prezzoNormale * 40 / 100 ;
     const prezzoFinale = prezzoNormale - sconto;
-    document.getElementById('prezzo_finale').innerHTML ='Salve gentile cliente lei ha diritto ad uno sconto del 20% quindi il suo biglietto le verrà a costare ' + prezzoFinale ;
+    document.getElementById('prezzo_finale').innerHTML ='Salve gentile cliente lei ha diritto ad uno sconto del 40% quindi il suo biglietto le verrà a costare ' + prezzoFinale ;
 
 console.log(prezzoNormaleElement);
 } 
