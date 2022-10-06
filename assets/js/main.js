@@ -21,7 +21,19 @@ console.log(prezzoNormale);
 
 const prezzoNormaleElement = document.getElementById('prezzo_normale');
 prezzoNormaleElement.innerHTML = prezzoNormale;
-console.log(prezzoNormaleElement);
 
 // va applicato uno sconto del 20% per i minorenni
 // va applicato uno sconto del 40% per gli over 65.
+if(age<=18){
+    const sconto = prezzoNormale * 20 / 100 ;
+    const prezzoFinale = prezzoNormale - sconto;
+    document.getElementById('prezzo_finale').innerHTML ='Salve gentile cliente lei ha diritto ad uno sconto del 20% quindi il suo biglietto le verrà a costare ' + prezzoFinale ;
+
+console.log(prezzoNormaleElement);
+} else if (age>=65){
+    const sconto = prezzoNormale * 40 / 100 ;
+    const prezzoFinale = prezzoNormale - sconto;
+    document.getElementById('prezzo_finale').innerHTML ='Salve gentile cliente lei ha diritto ad uno sconto del 20% quindi il suo biglietto le verrà a costare ' + prezzoFinale ;
+
+console.log(prezzoNormaleElement);
+} 
